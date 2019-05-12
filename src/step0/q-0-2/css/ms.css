@@ -1,0 +1,14 @@
+#main{
+	text-align: center;
+}
+
+#board>table {
+	margin: 0 auto;
+}
+	
+#board>table th {
+	margin: 0;
+	padding: 0.125em 0.25em;
+	line-height: 100%;
+	font-weight: normal;
+}
