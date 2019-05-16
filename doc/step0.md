@@ -1,58 +1,52 @@
-# Step 0 �͂��߂悤
+# Step 0 はじめよう
 
-## Q1.�����̕\��
-### �u���E�U�ŕ\�����Ă݂悤
+## Q1. 文字の表示
+### ブラウザで表示してみよう
 ```
 ./src/step0/q-0-1/html/ms.html
 ```
 
-### ���
-HTML����*message*�ɑ΂��āAJavaScript�ŕ������ݒ肵�Ă��܂��B
-HTML�ɒ��ڕ������L�q������A���_��ɕύX���邱�Ƃ��ł��܂��B
-�����Ɍ��炸�\�₻�̑��̑����ɂ��Ă��A��{�I��JavaScript����w�肷�邱�ƂɂȂ�܂��B
-�X�^�C���ɂ��Ă�`ms.css`���Q�Ƃ��Ă��������B
+### 解説
+HTML中の*message*に対してJavaScriptで文字列を設定しています。HTMLに直接文字を記述するより、より柔軟に変更することができます。
+文字に限らず表やその他の属性についても基本的にJavaScripから指定することになります。
+スタイルについては`ms.css`を参照してください。
 
 - ms.html
 
 ```html
-	<div id="main" class="container">
-	<div id="message"></div>
+  <div id="main" class="container">
+  <div id="message"></div>
 ```
-
 - ms.js
 
 ```js
 (function () {
-	$('#message').text('welcome to javascript-ms')
-	})();
+  $('#message').text('welcome to javascript-ms');
+})();
 ```
 
-### ����Ă݂悤
-�E�\�����镶���̓��e��ς��Ă݂܂��傤�B
-�E�����̐F��ς��Ă݂���A�E�񂹂⍶�񂹂ɂ��Ă݂܂��傤�B
+### やってみよう
+1. 表示する文字の内容を変えてみましょう。
+1. 文字の色を変えてみたり、右寄せや左寄せにしてみましょう。
 
-### �q���g
-���{��̕����͂��܂��\�������ł��傤���B
-��{�I�ɕ����R�[�h��UTF-8�𗘗p���܂��̂ŁA�t�@�C����ҏW����Ƃ��̕����R�[�h���m�F���Ă݂܂��傤�B
+### ヒント
+日本語の文字はうまく表示されるでしょうか。基本的に文字コードはutf-8を利用しますので、ファイルを編集するときの文字コードを確認してみましょう。
 
-
-## Q2.�\�̕\��
-### �u���E�U�ŕ\�����Ă݂悤
+## Q2. 表の表示
+### ブラウザで表示してみよう
 ```
 ./src/step0/q-0-2/html/ms.html
 ```
 
-### ���
-�\�ɂ��Ă����l��JavaScript�ŋL�q���s���܂��B
-�ʏ��`<table>`�^�O�𗘗p����HTML���L�q���܂����A�����s�ɂ܂����邽�߂����ł͔z��𗘗p���Ă��܂��B
-`join`�֐��̈�����separator�ɂȂ�܂����A�����ł͋󕶎�`''`���w�肳��Ă��邱�Ƃɒ��ӂ��Ă��������B
-�z��Ɋi�[����Ă��镶���񂪂��̂܂܌�������A`<table>`�^�O���\������邱�ƂɂȂ�܂��B
+### 解説
+表についても同様にJavaScriptで記述を行います。通常の`<table>`タグを利用してHTMLを記述しますが、複数行にまたがるためここでは配列を利用しています。
+`join`関数の引数はseparatorになりますがここでは空文字`''`が指定されていることに注意してください。配列に格納されている文字列がそのまま結合され、`<table>`タグが構成されることになります。
 
-### ����Ă݂悤
-�E�������ꂽ`<table>`�^�O�̓��e��\�����Ă݂܂��傤�B
-�E�\������\��4�~4�ɂ��Ă݂܂��傤�B
+### やってみよう
+1. 生成された`<table>`タグの内容を表示してみましょう。
+1. 表示する表を４×４にしてみましょう。
 
-### �q���g
-`table`�v�f�̍\�z�ɂ͕�����𗘗p���Ă��܂����A���̕��@�͂ǂ��炩�Ƃ����Ό��n�I�Ȃ����ł���A�m���ł͂���܂����_����邪�䂦�ɕێ琫��ǐ������Ȃ��Ă��܂��B
-`createElement`�Ȃǂ𗘗p���邱�Ƃł��*�v�f���\�z���Ă���*�Ƃ������������m�ɂȂ�A���A�@�\�I�ɂ��Ǝ��̎������Ƃ̕������}��܂��B
-�]�T������΂���𗘗p���Ă݂܂��傤�B
+### ヒント
+`table`要素の構築には文字列を利用していますがこの方法はどちらかといえば原始的なやり方であり、確実ではありますが柔軟すぎるゆえに保守性や可読性が損なわれています。
+`createElement`などを利用することでより*要素を構築している*という役割が明確になり、かつ、機能的にも独自の実装部との分離が図れます。
+余裕があればこれを利用してみましょう。

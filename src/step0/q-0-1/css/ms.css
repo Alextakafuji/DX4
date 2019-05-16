@@ -1,13 +1,13 @@
 #main
 {
- text-align: center;
+  text-align: center;
 }
 
-#message{
- border: 2px solid #494;
- border-radius: 6px;
- padding: 10px;
- background-color: rgba(68,153,68,0.3);
- font-size: 16px;
- color: #333;
+#message {
+  border: 2px solid #494;
+  border-radius: 6px;
+  padding: 10px;
+  background-color: rgba(68, 153, 68, 0.3);
+  font-size: 16px;
+  color: #333;
 }

@@ -1,3 +1,4 @@
-(function(){
- $('#message').text('welcome to javascript-ms テストテスト');
+(function () {
+  $('#message').text('welcome to javascript-ms　テストテスト');
 })();
+
