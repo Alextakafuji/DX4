@@ -8,7 +8,7 @@ function loop1(){
  for (var i = 0; i < 10; i++){
   loop1.push(i+'');
  }
- $('#loop1').text(loop1.join("));
+ $('#loop1').text(loop1.join(''));
 }
 
 function loop2(){
@@ -20,5 +20,5 @@ function loop2(){
   }
   loop2.push('</p>');
  }
- $('#loop2').html(loop2.join("));
+ $('#loop2').html(loop2.join(''));
 }

@@ -1,0 +1,17 @@
+#main
+{
+ text-align:center;
+}
+
+#table>table{
+ margin: 0 auto;
+}
+
+#table>table td{
+ border-collapse: collapse;
+ border: 1px solid #ccc;
+ padding: 0.125em 0.25em;
+ line-height: 100%;
+ background-color: #ccc;
+ color: #000;
+}
