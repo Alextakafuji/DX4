@@ -10,8 +10,9 @@
 #table>table td{
  border-collapse: collapse;
  background: #ccc;
+ background-color: #ccc;
  color: #f00;
- border: apx solid #ccc;
+ border: 1px solid #ccc;
  padding: 0;
  width: 2em;
  height: 2em;

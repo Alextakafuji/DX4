@@ -15,7 +15,7 @@ function loop2(){
  var loop2 =[];
  for (var i = 0; i < 10; i++){
   loop2.push('<p>');
-  for(var j = 0; j < 10; J++){
+  for(var j = 0; j < 10; j++){
    loop2.push('*');
   }
   loop2.push('</p>');
