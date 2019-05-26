@@ -1,5 +1,5 @@
 (function(){
- $('#table').html(cleate_table(init_cells(mine_cells(initialize_table(7,9),10))));
+ $('#table').html(create_table(init_cells(mine_cells(initialize_table(7,9),10))));
 })();
 
 function initialize_table(n,m,initialize){
