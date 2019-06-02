@@ -1,0 +1,42 @@
+#main {
+	text-align: center;
+}
+
+#table>table {
+	margin: 0 auto;
+}
+
+#table>table td {
+	border-collapse: collapse;
+}
+
+#table>table .cell {
+	background: #ccc;
+	border: 1px solid #ccc;
+	padding: 0;
+	line-height: 0;
+	width: 2em;
+	height: 2em;
+	margin: 0.1em;
+}
+
+#table>table .cell.on {
+	background-color: #ccc;
+}
+
+#table>table .cell.on.c1 {
+	color: #f00;
+}
+
+#table>table .cell.on.c2 {
+	color: #0f0;
+}
+
+#table>table .cell.on.c3 {
+	color: #00f;
+}
+
+#table>table .cell.off {
+	background-color: #ccc;
+	color: #ccc;
+}
